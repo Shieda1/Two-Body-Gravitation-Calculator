@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Body Gravitation Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="gravitationPotentialEnergyRadio" name="variables" checked>
+  <label for="gravitationPotentialEnergyRadio">Gravitation Potential Energy</label>
+
+  <input type="radio" id="massofthefirstobjectRadio" name="variables">
+  <label for="massofthefirstobjectRadio">Mass of the first object</label>
+
+  <input type="radio" id="massofthesecondobjectRadio" name="variables">
+  <label for="massofthesecondobjectRadio">Mass of the second object</label>
+
+  <input type="radio" id="distancebetweentheobjectsRadio" name="variables">
+  <label for="distancebetweentheobjectsRadio">Distance between the objects</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Mass of the first object (kg)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Mass of the second object (kg)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Distance between the objects (m)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button> 
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
